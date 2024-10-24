@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* customized scrrollbar */
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb{
+    background: goldenrod;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: red;
+}
+nav{
+    background: #111;
+    display: flex;
+    color: white;
+    padding: 20px;
+    position:  fixed;
+    width: 100%;
+    z-index: 999;
+}
+nav .logo{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    margin-left: 250px;
+}
+nav ul{
+    display: flex;
+    margin-left: 200px; 
+}
+nav ul ol a{
+    text-decoration: none;
+    color: white;
+    justify-content: space-between;
+    margin-right: 90px;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+}
+nav ul ol a:hover{
+    color: bisque;
+}
+.home{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("../Register/laptop.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+     height: 650px;
+    color: #fff;
+}
+.home .first{
+    position: absolute;
+    text-align: center;
+    margin-top: 150px;
+}
+.home .first h2{ 
+    font-size: 70px;
+    margin-left: 50px;
+    justify-content: space-between;
+    word-spacing: 30px;
+    letter-spacing: 1px;
+    width: 1300px;
+    
+}
+.home .first p{
+    font-size: 27px;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+.home .abox{
+    background: #fff;
+    width: 200px;
+    margin-left: 570px;
+    height: 60px;
+    margin-top: 40px;
+    border-radius: 6px;
+    border: 2px solid;
+    transition: all 0.3s ease-in;
+    padding: 5px;
+}
+.home .abox a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;  
+}
+.home .abox:hover{
+  background: transparent;
+  border: 2px solid black;
+}
+.services h2,
+.portfolio h2,
+.about h2,
+.teams h2,
+.contacts h2{
+    font-size: 35px;
+    text-align: center;
+    font-weight:500 ;
+    margin-top: 100px;
+}
+.services .jtext,
+.portfolio .jtext,
+.about .jtext,
+.teams .jtext,
+.contacts .jtext{
+    font-size: 18px;
+    text-align: center;
+    margin-top: 14px;
+}
+.services .flex-action,
+.portfolio .flex-action{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 150px;
+}
+.services .flex-action .box1{
+ background: #fff;
+ border: 0.5px solid rgb(187, 186, 186);
+ border-radius: 10px;
+ width: 300px;
+ height: 400px;
+ margin-left: 30px;     
+ box-shadow: 30px black;
+ text-align: center;
+ margin-top: 10px;
+ padding: 20px;
+ transition: all 0.6s ease-in-out;
+}
+.services .flex-action .box1:hover{
+ transform: scale(0.9);
+ background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1));
+}
+.services .flex-action .box1 img{
+    margin-top: 2px;
+}
+.services .flex-action .box1 h3{
+    font-size: 20px;
+    margin-top: 5px;
+    font-weight: bolder;
+}
+.services .flex-action .box1 p{
+    font-size: 19px;
+}
+.portfolio .flex-action .box2{
+    background: #fff;
+    border: 0.5px solid rgb(187, 186, 186);
+    border-radius: 10px;
+    width: 300px;
+    height: 550px;
+    margin-left: 30px;     
+    box-shadow: 30px black;
+    text-align: center;
+    margin-top: 10px;
+    
+    transition: all 0.6s ease-in-out;
+   }
+   .portfolio .flex-action .box2:hover{
+    transform: scale(0.9);
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1));
+   }
+   .portfolio .flex-action .box2 img{
+       margin-top: 2px;
+       height: 200px;
+       width: 295px;
+       border-top-left-radius: 10px;
+       border-top-right-radius: 10px;
+   }
+   .portfolio .flex-action .box2 h3{
+       font-size: 20px;
+       margin-top: 5px;
+       font-weight: bolder;
+   }
+   .portfolio .flex-action .box2 p{
+       font-size: 19px;
+       padding: 20px;
+   }
+   #about{
+    margin-top: 200px;
+   }
+    .about .box3{
+    border: 0.5px solid rgb(236, 236, 236);
+    border-radius: 10px;
+    width: 950px;
+    height: 150px;
+    padding: 20px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    margin-left: 190px;
+    transition: all 0.3s ease-in-out;
+   }
+   .about .box3:hover{
+    transform: scale(1.2);
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1));
+   }
+   .about .box3 h3{
+    font-size: 22px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: 500;
+   }
+   .about .box3 p{
+    font-size: 19px;
+    font-weight: 400;
+   }
+   #teams{
+    margin-top: 200px;
+   }
+   .teams .space{
+    display: flex;
+    margin-left: 90px;
+   }
+   .teams .space .box4 img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+   }
+   .teams .space .box4{
+      height: 300px;
+      width: 320px;
+      border: 1px solid rgb(182, 181, 181);
+      margin-left: 40px;
+      border-radius:10px;
+      background: black;
+      color: white;
+      padding: 30px;
+      text-align: center;
+      transition: all 0.3s ease-in-out;
+      margin-top: 50px;
+   }
+   .teams .space .box4:hover{
+    transform: scale(1.05);
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.5));
+   }
+   .contacts{
+    margin-top: 150px;
+    
+   }
+   .contacts .jtext{
+    margin-bottom: -30px;
+   }
+   .contacts .left{
+      position: relative;
+      margin-left: 50px;
+      margin-right: 300px;
+      margin-left: 150px;
+   }
+   .contacts .flexes{
+    display: flex;
+    margin-top: 30px;
+    text-decoration: none;
+
+   }
+   .dey-play{
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    margin-top: 100px;
+   }
+   .contacts .dey-play .left .flexes i{
+    font-size: large;
+    margin-right: 10px;
+   }
+   .contacts .dey-play .left .flexes .head,
+   .contacts .dey-play .left .flexes .head a{
+        font-size: 20px;
+        text-decoration: none;
+   }
+   .contacts form h3{
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: solid;
+   }
+   .contacts form .lab{
+    display: block;
+    font-size: 16px;
+    margin-top: 5px;
+    font-weight: 400;
+   }
+   .contacts form input{
+    width: 300px;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 2px solid rgb(202, 200, 200);
+    padding: 10px;
+    font-size: 18px;
+   }
+   .contacts form textarea{
+    width: 300px;
+    height: 150px;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: 2px solid rgb(202, 200, 200);
+    padding: 10px;
+    font-size: 18px;
+   }
+   .contacts form button{
+    background: rgb(3, 134, 3);
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    width: 200px;
+    color: #fff;
+    border: none;
+    height: 50px;
+    margin-top: 20px;
+    cursor: pointer;
+   }
+   footer{
+    background: #111;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    padding: 2px;
+    margin-top: 70px;
+   }
+   footer h3{
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .1px;
+   }
+   footer .flex2{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-left: 560px;
+    margin-top: 20px;
+   }
+   footer .flex2 div{
+    margin-left: 40px;
+   }
+
+
+   
+    
